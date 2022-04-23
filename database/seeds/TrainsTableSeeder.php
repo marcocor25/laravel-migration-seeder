@@ -2,6 +2,7 @@
 
 use App\Models\Train;
 use Illuminate\Database\Seeder;
+use Faker\Generator;
 
 class TrainsTableSeeder extends Seeder
 {
