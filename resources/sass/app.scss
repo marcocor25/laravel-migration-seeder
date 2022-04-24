@@ -3,3 +3,72 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: #404040;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f5deb3;
+}
+
+.container {
+    width: 1024px;
+    height: 80vh;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    overflow: auto;
+    background: #faebd7;
+
+    .main-title {
+        padding: 10px;
+        border-bottom: 1px solid #404040;
+    }
+
+    .row {
+        display: flex;
+        border-bottom: 1px solid #404040;
+        font-size: 12px;
+
+        .col {
+            width: calc(100% / 8);
+            min-height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            border-right: 1px solid #404040;
+            text-align: center;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+        .col-info {
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #ff0000;
+        }
+    }
+
+    .row-info {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: #faebd7;
+    }
+}
